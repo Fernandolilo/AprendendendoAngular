@@ -31,3 +31,18 @@
 <p>Imagens</p>
 
 <img [src]="imgSrc">
+
+<br>
+<hr>
+
+<h2>Event Binding</h2>
+
+<button (click)="alertaInfo()"> Evento</button>
+
+<hr>
+<button (click)="alertaInfo1('Deu bom Fernando')"> Evento1</button>
+<hr>
+<button (click)="alertaInfo2($event)"> Evento2</button>
+<hr>
+<div (mousemove)="mouseMoveTest($event)" style="background-color:red; height: 300px; width: 300px;"></div>
+<h3> {{ position.x }} - {{ position.y }} </h3>
