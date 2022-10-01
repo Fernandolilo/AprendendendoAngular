@@ -9,12 +9,12 @@
 
 <p>vamos fazer alguns testes</p>
 
-<p>Fernando tem mais de 36 anos? {{ idade > 36 }}</p>
+<p>{{ nome }} tem mais de 36 anos? {{ idade > 36 }}</p>
 
-<p>Fernando é do sexo feminino {{ sexo == "F" }}</p>
+<p>{{ nome }} é do sexo feminino {{ sexo == "F" }}</p>
 
 
-<p>Fernando é do sexo  {{sexo}} {{ sexo == "M" }}</p>
+<p>{{ nome }}é do sexo  {{sexo}} {{ sexo == "M" }}</p>
 
 <p>Quanto é a {{ idade }} +1?</p>
 <p>idade = {{idade+ 1}}</p>
@@ -46,3 +46,10 @@
 <hr>
 <div (mousemove)="mouseMoveTest($event)" style="background-color:red; height: 300px; width: 300px;"></div>
 <h3> {{ position.x }} - {{ position.y }} </h3>
+
+<hr>
+
+<h1>Tho-way Binding</h1>
+
+<input [(ngModel)]="nome"> 
+{{ nome }}
