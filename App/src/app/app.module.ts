@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InterpolationComponent } from './components/interpolation/interpolation.component';
+import { DiretivasEstruturaisComponent } from './components/diretivas-estruturais/diretivas-estruturais.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InterpolationComponent
+    InterpolationComponent,
+    DiretivasEstruturaisComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,30 @@
+<h1>Diretivas-estruturais</h1>
+
+<p *ngIf="true"> True</p>
+
+<p style="background-color: blue;" *ngIf="condition">Condition</p>
+
+<p style="background-color: green;" *ngIf="condition; else elseBlock">Condition template </p>
+<ng-template #elseBlock>
+    <p style="background-color: red;">
+        False
+    </p>
+</ng-template>
+
+<hr>
+<br>
+<h3>Teste
+
+    <p *ngIf="conditionClick">
+        True
+    </p>
+    
+    <p *ngIf="!conditionClick">
+        False
+    </p>
+    
+</h3>
+
+
+
+<button (click)="onClick()">Clicar</button>
